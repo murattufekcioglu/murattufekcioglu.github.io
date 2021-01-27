@@ -6,9 +6,11 @@ window.onorientationchange = function (event) {
     if (event.target.screen.orientation.angle == 0) {
         textoutput.style.display = "none"
         textinput.style.display = "inline"
+        textinput.focus()
     } else if (event.target.screen.orientation.angle == 90) {
         textoutput.textContent = textinput.textContent
         textoutput.style.display = "inline"
+        textoutput.focus()
         textinput.style.display = "none"
     }
 };
