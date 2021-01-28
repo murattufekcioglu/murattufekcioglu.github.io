@@ -14,3 +14,9 @@ window.onorientationchange = function (event) {
         textinput.style.display = "none"
     }
 };
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    var textinput = this.document.getElementById("textinput");
+    textinput.click()
+    console.log('DOM fully loaded and parsed');
+});
