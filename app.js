@@ -6,10 +6,12 @@ window.onorientationchange = function (event) {
     if (event.target.screen.orientation.angle == 0) {
         textoutput.style.display = "none"
         textinput.style.display = "inline"
+        document.activeElement.blur();
         textinput.focus()
     } else if (event.target.screen.orientation.angle == 90) {
         textoutput.textContent = textinput.textContent
         textoutput.style.display = "inline"
+        document.activeElement.blur();
         textoutput.focus()
         textinput.style.display = "none"
     }
@@ -17,7 +19,9 @@ window.onorientationchange = function (event) {
 
 document.addEventListener('DOMContentLoaded', (event) => {
     var textinput = this.document.getElementById("textinput");
-    textinput.click()
-    console.log('DOM fully loaded and parsed');
-    prompt()
+    console.log(document.activeElement);
+    document.activeElement.blur();
+    textinput.click(); console.log("clicked");
+    textinput.focus(); console.log("focused");
+    navigator.vibrate([50, 50, 20, 10, 20]);
 });
