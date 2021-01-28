@@ -19,4 +19,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var textinput = this.document.getElementById("textinput");
     textinput.click()
     console.log('DOM fully loaded and parsed');
+    prompt()
 });
