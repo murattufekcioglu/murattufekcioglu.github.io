@@ -5,5 +5,11 @@
     "background_color": "#2196f3",
     "display": "fullscreen",
     "scope": "/typetilt",
-    "start_url": "/typetilt/index.html"
+    "start_url": "/typetilt/index.html",
+    "icons": [ 
+        {
+            "src": "./icons/phone.svg",
+            "sizes": "any"
+        }
+    ]
   }
