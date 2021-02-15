@@ -11,6 +11,7 @@ self.addEventListener("install", (e) => {
 
 var cacheName = "appCache-v1";
 var appShellFiles = ["index.html", "app.js", "style.css", "icons/phone.svg"];
+var contentToCache = appShellFiles;
 
 self.addEventListener("activate", function (event) {
   console.log("[Service Worker] Activate");
