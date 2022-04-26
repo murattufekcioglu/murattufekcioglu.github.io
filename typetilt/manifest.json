@@ -1,0 +1,15 @@
+{
+    "name": "TypeTilt",
+    "short_name": "TypeTilt",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "fullscreen",
+    "scope": "/typetilt/",
+    "start_url": "/typetilt/index.html",
+    "icons": [ 
+        {
+            "src": "icons/phone.svg",
+            "sizes": "192x192 512x512"
+        }
+    ]
+  }
